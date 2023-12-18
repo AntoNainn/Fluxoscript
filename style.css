@@ -1,0 +1,264 @@
+.doc {
+  background: linear-gradient(to bottom right, #18181f, #424450);
+}
+
+@font-face {
+  font-family: "FiraCode";
+  src: url(asset/font/static/FiraCode-Light.ttf);
+}
+@font-face {
+  font-family: "Graphik";
+  src: url(asset/font/GraphikLight.otf);
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+}
+
+header {
+  background-image: url(asset/img/back.png);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+  font-family: FiraCode;
+  background-color: #18181f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: FiraCode;
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.navbar ul .navbar--liste {
+  padding: 10px;
+}
+.navbar ul .navbar--liste a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul .navbar--liste a:hover {
+  color: #FFCC41;
+}
+
+.navbar--liste-post {
+  padding: 7px;
+  border: 2px solid #FFCC41;
+  border-radius: 4px;
+}
+.navbar--liste-post a {
+  text-decoration: none;
+  color: #FFCC41;
+}
+
+.Titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: FiraCode;
+  margin: 50px;
+}
+.Titre h1 {
+  font-size: 150px;
+}
+.Titre h2 {
+  font-size: 25px;
+}
+
+.contexte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+  width: 800px;
+  font-family: Graphik;
+  font-size: 22px;
+}
+.contexte ul {
+  padding: 30px;
+  list-style-type: decimal;
+  font-size: 18px;
+}
+.contexte li {
+  padding: 10px 0px;
+}
+
+span {
+  color: #FFCC41;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 10px;
+  }
+  .Titre {
+    font-size: 35px;
+  }
+  .SousTitre {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+.doc {
+  background: linear-gradient(to bottom right, #18181f, #424450);
+}
+
+@font-face {
+  font-family: "FiraCode";
+  src: url(asset/font/static/FiraCode-Light.ttf);
+}
+@font-face {
+  font-family: "Graphik";
+  src: url(asset/font/GraphikLight.otf);
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+}
+
+header {
+  background-image: url(asset/img/back.png);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+  font-family: FiraCode;
+  background-color: #18181f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: FiraCode;
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.navbar ul .navbar--liste {
+  padding: 10px;
+}
+.navbar ul .navbar--liste a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul .navbar--liste a:hover {
+  color: #FFCC41;
+}
+
+.navbar--liste-post {
+  padding: 7px;
+  border: 2px solid #FFCC41;
+  border-radius: 4px;
+}
+.navbar--liste-post a {
+  text-decoration: none;
+  color: #FFCC41;
+}
+
+.Titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: FiraCode;
+  margin: 50px;
+}
+.Titre h1 {
+  font-size: 150px;
+}
+.Titre h2 {
+  font-size: 25px;
+}
+
+.contexte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+  width: 800px;
+  font-family: Graphik;
+  font-size: 22px;
+}
+.contexte ul {
+  padding: 30px;
+  list-style-type: decimal;
+  font-size: 18px;
+}
+.contexte li {
+  padding: 10px 0px;
+}
+
+span {
+  color: #FFCC41;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 10px;
+  }
+  .Titre {
+    font-size: 35px;
+  }
+  .SousTitre {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

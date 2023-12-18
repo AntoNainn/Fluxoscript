@@ -1,0 +1,139 @@
+@use 'doc';
+
+@font-face {
+    font-family: 'FiraCode';
+    src: url(asset/font/static/FiraCode-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url(asset/font/GraphikLight.otf);
+}
+
+$color-first: #FFCC41;
+$font-contexte: Graphik;
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+}
+
+header{
+    background-image: url(asset/img/back.png);
+    // background-color: #2e303a;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    font-family: FiraCode;
+    background-color: #18181f;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: FiraCode;
+    background-color:  black;
+    padding: 10px;
+    font-size: 20px;
+    ul{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        .navbar--liste{
+            padding: 10px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            a:hover{
+                color: $color-first;
+            }
+        }
+    }
+}
+
+.navbar--liste-post{
+    padding: 7px;
+    border: 2px solid $color-first;
+    border-radius: 4px;
+    a{
+        text-decoration: none;
+        color: $color-first;
+    }
+}
+
+.Titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: FiraCode;
+    margin: 50px;
+    h1{
+        font-size: 150px;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
+
+.contexte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    width: 800px;
+    font-family: $font-contexte;
+    font-size: 22px;
+    ul{
+        padding: 30px;
+        list-style-type: decimal ;
+        font-size: 18px;
+    }
+    li{
+        padding: 10px 0px;
+    }
+}
+
+// .contexte--li-left{
+//     display: flex;
+//     justify-content: left;
+// }
+
+span{
+    color: $color-first;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    flex-shrink: 0;
+    width: 100%;
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        font-size: 10px;
+    }
+    .Titre{
+        font-size: 35px;
+    }
+    .SousTitre{
+        font-size: 10px;
+    }
+}
