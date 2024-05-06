@@ -71,6 +71,10 @@ main {
   color: #FFCC41;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .Titre {
   display: flex;
   flex-direction: column;
@@ -177,6 +181,7 @@ main {
   padding: 10px;
   font-size: 20px;
 }
+
 .navbar ul {
   display: flex;
   list-style-type: none;
